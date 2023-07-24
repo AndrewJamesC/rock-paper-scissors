@@ -14,17 +14,17 @@ console.log(getComputerChoice());
 // A function that plays a single round of rock, paper, scissors with
 // a human player against the computer. Outputs a winner at the end.
 
-// Make sure to make playerSelection case insensitive later
+
 
 function playRound(playerSelection, computerSelection) {
-    if ((playerSelection == "rock" && computerSelection == "scissors") || (playerSelection == "scissors" && computerSelection == "paper") || (playerSelection == "paper" && computerSelection == "rock")) {
+    if ((playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") || (playerSelection.toLowerCase() == "paper" && computerSelection == "rock")) {
         return `You win ${playerSelection} beats ${computerSelection}!`
-    } else if ((playerSelection == "rock" && computerSelection == "paper") || (playerSelection == "scissors" && computerSelection == "rock") || (playerSelection == "paper" && computerSelection == "scissors")) {
+    } else if ((playerSelection.toLowerCase() == "rock" && computerSelection == "paper") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") || (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors")) {
         return `You lose ${computerSelection} beats ${playerSelection}!`
     } else {
         return "It's a draw! Try again."
     }
 }
-const playerSelection = "rock";
+const playerSelection = "PaPEr";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
