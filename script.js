@@ -33,15 +33,19 @@ console.log(playRound(playerSelection, computerSelection));
 // after each round. After five rounds it displays the winner.
 
 function game() {
+    let playerScore = 0;
+    let computerScore = 0;
     if (playRound(playerSelection, computerSelection) == "playerWins") {
         alert(`You win ${playerSelection} beats ${computerSelection}!`)
-        return "Plus one to players score"
+        return (playerScore + 1)
     } else if (playRound(playerSelection, computerSelection) == "computerWins"){
         alert(`You lose ${computerSelection} beats ${playerSelection}!`)
-        return "Plus one to computers score"
+        return (computerScore + 1)
     } else {
         alert("It's a draw! Try again.")
-        return "It's a draw. No change in score"
+        return ""
     }
 }
+
+
 console.log(game());
