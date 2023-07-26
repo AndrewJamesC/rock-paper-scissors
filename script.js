@@ -18,13 +18,17 @@ console.log(getComputerChoice());
 
 function playRound(playerSelection, computerSelection) {
     if ((playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") || (playerSelection.toLowerCase() == "paper" && computerSelection == "rock")) {
-        return `You win ${playerSelection} beats ${computerSelection}!`
+        alert(`You win ${playerSelection} beats ${computerSelection}!`)
     } else if ((playerSelection.toLowerCase() == "rock" && computerSelection == "paper") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") || (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors")) {
-        return `You lose ${computerSelection} beats ${playerSelection}!`
+        alert(`You lose ${computerSelection} beats ${playerSelection}!`)
     } else {
-        return "It's a draw! Try again."
+        alert("It's a draw! Try again.")
     }
 }
 const playerSelection = "PaPEr";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
+
+// A function that plays the above function five times. Keeping score 
+// after each round. After five rounds it displays the winner.
+
