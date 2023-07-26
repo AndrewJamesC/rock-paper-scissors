@@ -28,17 +28,4 @@ console.log(playRound(playerSelection, computerSelection));
 // A function that plays the above function five times. Keeping score 
 // after each round. After five rounds it displays the winner.
 
-function game() {
-    let playerScore = 0;
-    let computerSCore = 0;
-    if (playRound(playerSelection, computerSelection) == "playerWins") {
-        return ("Player score + 1")
-    } else if (playRound(playerSelection, computerSelection) == "computerWins"){
-        return "Plus one to computers score"
-    } else {
-        return "It's a draw. No change in score"
-    }
-}
 
-
-console.log(game());
