@@ -19,10 +19,13 @@ console.log(getComputerChoice());
 function playRound(playerSelection, computerSelection) {
     if ((playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") || (playerSelection.toLowerCase() == "paper" && computerSelection == "rock")) {
         alert(`You win ${playerSelection} beats ${computerSelection}!`)
+        return "playerWins"
     } else if ((playerSelection.toLowerCase() == "rock" && computerSelection == "paper") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") || (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors")) {
         alert(`You lose ${computerSelection} beats ${playerSelection}!`)
+        return "computerWins"
     } else {
         alert("It's a draw! Try again.")
+        return "draw"
     }
 }
 const playerSelection = "PaPEr";
