@@ -34,11 +34,3 @@ console.log(playRound(playerSelection, computerSelection));
 
 // A function that plays the above function five times. Keeping score 
 // after each round. After five rounds it displays the winner.
-
-let playerScore = 0;
-let comuterScore = 0;
-
-function game() {
-    playRound(playerSelection, computerSelection)
-  
-}
