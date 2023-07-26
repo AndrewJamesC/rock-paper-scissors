@@ -6,10 +6,6 @@ function getComputerChoice() {
     return rockPaperScissors[Math.floor(Math.random()*rockPaperScissors.length)];
     }
 
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
 
 // A function that plays a single round of rock, paper, scissors with
 // a human player against the computer. Outputs a winner at the end.
@@ -34,16 +30,13 @@ console.log(playRound(playerSelection, computerSelection));
 
 function game() {
     let playerScore = 0;
-    let computerScore = 0;
+    let computerSCore = 0;
     if (playRound(playerSelection, computerSelection) == "playerWins") {
-        alert(`You win ${playerSelection} beats ${computerSelection}!`)
-        return (playerScore + 1)
+        return ("Player score + 1")
     } else if (playRound(playerSelection, computerSelection) == "computerWins"){
-        alert(`You lose ${computerSelection} beats ${playerSelection}!`)
-        return (computerScore + 1)
+        return "Plus one to computers score"
     } else {
-        alert("It's a draw! Try again.")
-        return ""
+        return "It's a draw. No change in score"
     }
 }
 
