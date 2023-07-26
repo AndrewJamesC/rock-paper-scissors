@@ -18,14 +18,11 @@ console.log(getComputerChoice());
 
 function playRound(playerSelection, computerSelection) {
     if ((playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") || (playerSelection.toLowerCase() == "paper" && computerSelection == "rock")) {
-        alert(`You win ${playerSelection} beats ${computerSelection}!`)
-        return "playerWins"
+       return "playerWins"
     } else if ((playerSelection.toLowerCase() == "rock" && computerSelection == "paper") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") || (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors")) {
-        alert(`You lose ${computerSelection} beats ${playerSelection}!`)
-        return "computerWins"
+       return "computerWins"
     } else {
-        alert("It's a draw! Try again.")
-        return "draw"
+       return "draw"
     }
 }
 const playerSelection = "PaPEr";
@@ -37,10 +34,13 @@ console.log(playRound(playerSelection, computerSelection));
 
 function game() {
     if (playRound(playerSelection, computerSelection) == "playerWins") {
-    return "Plus one to players score"
+        alert(`You win ${playerSelection} beats ${computerSelection}!`)
+        return "Plus one to players score"
     } else if (playRound(playerSelection, computerSelection) == "computerWins"){
+        alert(`You lose ${computerSelection} beats ${playerSelection}!`)
         return "Plus one to computers score"
     } else {
+        alert("It's a draw! Try again.")
         return "It's a draw. No change in score"
     }
 }
