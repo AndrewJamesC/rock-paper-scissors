@@ -24,8 +24,7 @@ function playRound(playerSelection, computerSelection) {
        return "draw"
     }
 }
-const playerSelection = "PaPEr";
-const computerSelection = getComputerChoice();
+
 
 
 
@@ -35,7 +34,7 @@ const computerSelection = getComputerChoice();
 
   function game() {
    // Round 1
-   let playerSelection1 = "PaPEr";
+   let playerSelection1 = prompt("Type ROCK, PAPER or SCISSORS");
    let computerSelection1 = getComputerChoice();
    let result1 = playRound(playerSelection1, computerSelection1);
    console.log("player chose " + playerSelection1);
@@ -45,7 +44,7 @@ const computerSelection = getComputerChoice();
    console.log("Computer score " + computerScore);
 
    // Round 2
-   let playerSelection2 = "PaPEr";
+   let playerSelection2 = prompt("Type ROCK, PAPER or SCISSORS");
    let computerSelection2 = getComputerChoice();
    let result2 = playRound(playerSelection2, computerSelection2);
    console.log("player chose " + playerSelection2);
@@ -56,7 +55,7 @@ const computerSelection = getComputerChoice();
   
 
   // Round 3
-   let playerSelection3 = "PaPEr";
+   let playerSelection3 = prompt("Type ROCK, PAPER or SCISSORS");
    let computerSelection3 = getComputerChoice();
    let result3 = playRound(playerSelection3, computerSelection3);
    console.log("player chose " + playerSelection3);
@@ -66,7 +65,7 @@ const computerSelection = getComputerChoice();
    console.log("Computer score " + computerScore);
 
    // Round 4
-   let playerSelection4 = "PaPer"
+   let playerSelection4 = prompt("Type ROCK, PAPER or SCISSORS");
    let computerSelection4 = getComputerChoice();
    let result4 = playRound(playerSelection4, computerSelection4);
    console.log("player chose " + playerSelection4);
@@ -76,7 +75,7 @@ const computerSelection = getComputerChoice();
    console.log("Computer score " + computerScore);
   
    //Round 5
-   let playerSelection5 = "PaPer"
+   let playerSelection5 = prompt("Type ROCK, PAPER or SCISSORS");
    let computerSelection5 = getComputerChoice();
    let result5 = playRound(playerSelection5, computerSelection5);
    console.log("player chose " + playerSelection5);
