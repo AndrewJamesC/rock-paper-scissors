@@ -84,5 +84,15 @@ const computerSelection = getComputerChoice();
    console.log("Result " + result5);
    console.log("Player score " + playerScore);
    console.log("Computer score " + computerScore);
+
+   if (playerScore > computerScore) {
+      console.log ("Player wins!")
+   }
+   else if (computerScore > playerScore){
+      console.log("Computer wins!")
+   }
+   else {
+      console.log("It's a draw!")
+   }
   }
   game();
