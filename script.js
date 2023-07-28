@@ -35,15 +35,54 @@ const computerSelection = getComputerChoice();
 
   function game() {
    // Round 1
-   let playerSelection1 = "PaPEr"
+   let playerSelection1 = "PaPEr";
    let computerSelection1 = getComputerChoice();
    let result1 = playRound(playerSelection1, computerSelection1);
    console.log("player chose " + playerSelection1);
    console.log("computer chose " + computerSelection1);
    console.log("Result " + result1);
-   console.log("PLayer score " + playerScore)
+   console.log("PLayer score " + playerScore);
    console.log("Computer score " + computerScore);
 
-  }
+   // Round 2
+   let playerSelection2 = "PaPEr";
+   let computerSelection2 = getComputerChoice();
+   let result2 = playRound(playerSelection2, computerSelection2);
+   console.log("player chose " + playerSelection2);
+   console.log("computer chose " + computerSelection2);
+   console.log("Result " + result2);
+   console.log("PLayer score " + playerScore);
+   console.log("Computer score " + computerScore);
+  
 
+  // Round 3
+   let playerSelection3 = "PaPEr";
+   let computerSelection3 = getComputerChoice();
+   let result3 = playRound(playerSelection3, computerSelection3);
+   console.log("player chose " + playerSelection3);
+   console.log("computer chose " + computerSelection3);
+   console.log("Result " + result3);
+   console.log("PLayer score " + playerScore);
+   console.log("Computer score " + computerScore);
+
+   // Round 4
+   let playerSelection4 = "PaPer"
+   let computerSelection4 = getComputerChoice();
+   let result4 = playRound(playerSelection4, computerSelection4);
+   console.log("player chose " + playerSelection4);
+   console.log("computer chose " + computerSelection4);
+   console.log("Result " + result4);
+   console.log("Player score " + playerScore);
+   console.log("Computer score " + computerScore);
+  
+   //Round 5
+   let playerSelection5 = "PaPer"
+   let computerSelection5 = getComputerChoice();
+   let result5 = playRound(playerSelection5, computerSelection5);
+   console.log("player chose " + playerSelection5);
+   console.log("computer chose " + computerSelection5);
+   console.log("Result " + result5);
+   console.log("Player score " + playerScore);
+   console.log("Computer score " + computerScore);
+  }
   game();
