@@ -26,17 +26,24 @@ function playRound(playerSelection, computerSelection) {
 }
 const playerSelection = "PaPEr";
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+
+
+
 
 // A function that plays the above function five times. Keeping score 
 // after each round. After five rounds it displays the winner.
 
+  function game() {
+   // Round 1
+   let playerSelection1 = "PaPEr"
+   let computerSelection1 = getComputerChoice();
+   let result1 = playRound(playerSelection1, computerSelection1);
+   console.log("player chose " + playerSelection1);
+   console.log("computer chose " + computerSelection1);
+   console.log("Result " + result1);
+   console.log("PLayer score " + playerScore)
+   console.log("Computer score " + computerScore);
 
+  }
 
-function game() 
- 
-   
-   console.log(playerScore);
-   console.log(computerScore);
-
-
+  game();
