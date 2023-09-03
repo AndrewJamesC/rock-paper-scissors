@@ -46,6 +46,8 @@ function playRound(playerSelection, computerSelection) {
 
   
 
+  
+
    /*
    // Round 2
    let playerSelection2 = prompt("Type ROCK, PAPER or SCISSORS");
