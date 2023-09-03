@@ -29,20 +29,30 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-// A function that plays the above function five times. Keeping score 
-// after each round. After five rounds it displays the winner.
 
-  function game() {
-   // Round 1
-   let playerSelection1 = prompt("Type ROCK, PAPER or SCISSORS");
-   let computerSelection1 = getComputerChoice();
-   let result1 = playRound(playerSelection1, computerSelection1);
-   console.log("player chose " + playerSelection1);
-   console.log("computer chose " + computerSelection1);
-   console.log("Result " + result1);
-   console.log("PLayer score " + playerScore);
-   console.log("Computer score " + computerScore);
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach((button) => [
+   button.addEventListener("click", function (e) {
+      console.log(e.target.id);
+      let playerSelection = (e.target.id);
+      function game() {
+         // Round 1
+         
+         let computerSelection = getComputerChoice();
+         let result = playRound(playerSelection, computerSelection);
+         console.log("player chose " + playerSelection);
+         console.log("computer chose " + computerSelection);
+         console.log("Result " + result);
+         console.log("PLayer score " + playerScore);
+         console.log("Computer score " + computerScore);
+        };
+        game();
+   })
+  ]);
 
+  
+
+   /*
    // Round 2
    let playerSelection2 = prompt("Type ROCK, PAPER or SCISSORS");
    let computerSelection2 = getComputerChoice();
@@ -93,5 +103,5 @@ function playRound(playerSelection, computerSelection) {
    else {
       console.log("It's a draw!")
    }
-  }
-  game();
+  } */
+
