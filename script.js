@@ -26,18 +26,12 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-
-
-
-
   const buttons = document.querySelectorAll("button");
   buttons.forEach((button) => [
    button.addEventListener("click", function (e) {
       console.log(e.target.id);
       let playerSelection = (e.target.id);
       function game() {
-         // Round 1
-         
          let computerSelection = getComputerChoice();
          let result = playRound(playerSelection, computerSelection);
          console.log("player chose " + playerSelection);
