@@ -39,12 +39,28 @@ function playRound(playerSelection, computerSelection) {
          console.log("Result " + result);
          console.log("PLayer score " + playerScore);
          console.log("Computer score " + computerScore);
+
+         const container = document.querySelector("#container");
+
+        const content = document.createElement("div");
+         if(result === "playerWins") {
+            content.textContent = "Player is the winner";
+            } else if (result === "computerWins") {
+               content.textContent = "Computer is the winner";
+            } else {
+               content.textContent = "It's a draw"
+            };
+      container.appendChild(content);
         };
+
         game();
+        
+      
    })
   ]);
 
-  
+ 
+
 
   
 
