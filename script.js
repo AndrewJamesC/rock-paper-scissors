@@ -44,9 +44,11 @@ function playRound(playerSelection, computerSelection) {
 
         const content = document.createElement("div");
          if(result === "playerWins") {
-            content.textContent = "Player is the winner";
+            content.textContent = `${playerSelection} beats ${computerSelection}
+            Player wins!`;
             } else if (result === "computerWins") {
-               content.textContent = "Computer is the winner";
+               content.textContent = `${computerSelection} beats ${playerSelection}
+               Computer wins!`;
             } else {
                content.textContent = "It's a draw"
             };
