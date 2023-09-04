@@ -1,7 +1,7 @@
 // A function for the computer's choice that randomly returns
 // rock, paper, or scissors.
 
-const rockPaperScissors = ["rock", "paper", "scissors"];
+const rockPaperScissors = ["Rock", "Paper", "Scissors"];
 function getComputerChoice() {
     return rockPaperScissors[Math.floor(Math.random()*rockPaperScissors.length)];
     }
@@ -14,10 +14,10 @@ let playerScore = 0;
 let computerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
-    if ((playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") || (playerSelection.toLowerCase() == "paper" && computerSelection == "rock")) {
+    if ((playerSelection.toLowerCase() == "rock" && computerSelection == "Scissors") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "Paper") || (playerSelection.toLowerCase() == "paper" && computerSelection == "Rock")) {
       playerScore = playerScore + 1
       return "playerWins"
-    } else if ((playerSelection.toLowerCase() == "rock" && computerSelection == "paper") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") || (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors")) {
+    } else if ((playerSelection.toLowerCase() == "rock" && computerSelection == "Paper") || (playerSelection.toLowerCase() == "scissors" && computerSelection == "Rock") || (playerSelection.toLowerCase() == "paper" && computerSelection == "Scissors")) {
       computerScore = computerScore + 1
       return "computerWins"
     } else {
@@ -59,9 +59,7 @@ function playRound(playerSelection, computerSelection) {
             victory.textContent = "The player is victorious!"
          } else if (computerScore === 5 && playerScore <5) {
             victory.textContent = "The computer is victorious!"
-         } else{
-            
-         }
+         } else{}
         };
 
         game();
