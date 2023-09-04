@@ -41,7 +41,7 @@ function playRound(playerSelection, computerSelection) {
          console.log("Computer score " + computerScore);
 
          const container = document.querySelector("#container");
-
+                 
         const content = document.createElement("div");
          if(result === "playerWins") {
             content.textContent = `${playerSelection} beats ${computerSelection}
