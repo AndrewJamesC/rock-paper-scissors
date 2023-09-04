@@ -40,19 +40,19 @@ function playRound(playerSelection, computerSelection) {
          console.log("PLayer score " + playerScore);
          console.log("Computer score " + computerScore);
 
-         const container = document.querySelector("#container");
+         const results = document.getElementById("result");
                  
-        const content = document.createElement("div");
+        
          if(result === "playerWins") {
-            content.textContent = `${playerSelection} beats ${computerSelection}
+            results.textContent = `${playerSelection} beats ${computerSelection}
             Player wins!`;
             } else if (result === "computerWins") {
-               content.textContent = `${computerSelection} beats ${playerSelection}
+               results.textContent = `${computerSelection} beats ${playerSelection}
                Computer wins!`;
             } else {
-               content.textContent = "It's a draw"
+               results.textContent = "It's a draw"
             };
-      container.appendChild(content);
+     
         };
 
         game();
